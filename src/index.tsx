@@ -4,8 +4,6 @@ import { serveStatic } from "hono/cloudflare-workers";
 
 const app = new Hono();
 
-app.use("*", poweredBy());
-
 const Layout = (props: { children?: string }) => {
   return (
     <html lang="en">
