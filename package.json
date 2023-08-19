@@ -2,7 +2,7 @@
   "name": "abekoh.dev",
   "version": "0.0.1",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/index.tsx",
   "scripts": {
     "test": "jest --verbose",
     "dev": "wrangler dev src/index.tsx",
