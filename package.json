@@ -1,0 +1,25 @@
+{
+  "name": "abekoh.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abekoh/abekoh.dev.git"
+  },
+  "author": "abekoh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abekoh/abekoh.dev/issues"
+  },
+  "homepage": "https://github.com/abekoh/abekoh.dev#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "wrangler": "^3.5.1"
+  }
+}
