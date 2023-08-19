@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --verbose",
-    "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler publish src/index.ts"
+    "dev": "wrangler dev src/index.tsx",
+    "deploy": "wrangler publish src/index.tsx"
   },
   "repository": {
     "type": "git",
