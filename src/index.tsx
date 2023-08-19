@@ -57,7 +57,7 @@ const links: { href: string; text: string }[] = [
     text: "Twitter",
   },
   {
-    href: "https://bsky.app/profile/abekoh.bsky.social",
+    href: "https://bsky.app/profile/abekoh.dev",
     text: "Bluesky",
   },
   {
