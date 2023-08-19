@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { poweredBy } from "hono/powered-by";
+import { serveStatic } from "hono/cloudflare-workers";
 
 const app = new Hono();
 
@@ -16,19 +17,19 @@ const Layout = (props: { children?: string }) => {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/assets/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="96x96"
-          href="/favicon-96x96.png"
+          href="/assets/favicon-96x96.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/assets/favicon-16x16.png"
         />
         <title>abekoh.dev</title>
         <link
@@ -85,7 +86,7 @@ const Top = () => {
     <Layout>
       <main>
         <h1>abekoh.dev</h1>
-        <img src="/author.png" alt="author" />
+        <img src="/assets/author.png" alt="author" />
         <p>abekoh (Kotaro Abe, 阿部 耕太郎) is a software engineer.</p>
         <ul>
           {links.map((link) => (
@@ -102,5 +103,15 @@ const Top = () => {
 app.get("/", (c) => {
   return c.html(<Top />);
 });
+
+app.get(
+  "/assets/*",
+  serveStatic({
+    root: "./",
+    rewriteRequestPath: (path) => path.replace(/^\/assets/, "/"),
+  })
+);
+
+app.get("/favicon.ico", serveStatic({ path: "./favicon.ico" }));
 
 export default app;
