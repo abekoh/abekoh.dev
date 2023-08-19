@@ -1,4 +1,4 @@
-dist
+ist
 node_modules
 worker
 package-lock.json
@@ -6,4 +6,4 @@ yarn.lock
 .cargo-ok
 
 # Output of 'npm pack'
-*.tgz
+.tgz

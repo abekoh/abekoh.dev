@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { Hono } from "hono";
 import { serveStatic } from "hono/cloudflare-workers";
-import { jsx } from 'hono/jsx'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { jsx } from "hono/jsx";
 
 const app = new Hono();
 
@@ -109,7 +110,7 @@ app.get(
   serveStatic({
     root: "./",
     rewriteRequestPath: (path) => path.replace(/^\/assets/, "/"),
-  })
+  }),
 );
 
 app.get("/favicon.ico", serveStatic({ path: "./favicon.ico" }));
