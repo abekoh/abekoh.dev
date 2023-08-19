@@ -6,16 +6,17 @@ on:
 jobs:
   pr:
     runs-on: ubuntu-latest
-    name: Run with PR
+    name: Check PR Changes
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version-file: "package.json"
+          cache: "npm"
+          cache-dependency-path: "package-lock.json"
       - name: Install
         run: npm ci
       - name: Lint
-        run: npm lint
+        run: npm run lint
       - name: Test
-        run: npm test
-
+        run: npm run test
