@@ -50,7 +50,7 @@ const links: { href: string; text: string }[] = [
   },
   {
     href: "https://blog.abekoh.dev/",
-    text: "abekoh's tech note (Japanese)",
+    text: "abekoh's tech note",
   },
   {
     href: "https://twitter.com/abekoh_bcky",
@@ -62,7 +62,7 @@ const links: { href: string; text: string }[] = [
   },
   {
     href: "https://mstdn.jp/@abekoh",
-    text: "Mastodon (mstdn.jp)",
+    text: "Mastodon",
   },
   {
     href: "https://www.linkedin.com/in/abekoh",
@@ -82,7 +82,7 @@ const links: { href: string; text: string }[] = [
   },
   {
     href: "https://github.com/abekoh/abekoh/blob/main/RESUME-ja.md",
-    text: "Resume (Japanese)",
+    text: "Resume",
   },
 ];
 
