@@ -50,7 +50,7 @@ const links: { href: string; text: string }[] = [
   },
   {
     href: "https://blog.abekoh.dev/",
-    text: "abekoh's tech note (blog, Japanese)",
+    text: "abekoh's tech note (Japanese)",
   },
   {
     href: "https://twitter.com/abekoh_bcky",
@@ -69,16 +69,20 @@ const links: { href: string; text: string }[] = [
     text: "LinkedIn",
   },
   {
-    href: "https://speakerdeck.com/abekoh",
-    text: "Speaker Deck",
-  },
-  {
     href: "https://zenn.dev/abekoh",
     text: "Zenn",
   },
   {
     href: "https://qiita.com/abekoh",
     text: "Qiita",
+  },
+  {
+    href: "https://speakerdeck.com/abekoh",
+    text: "Speaker Deck",
+  },
+  {
+    href: "https://github.com/abekoh/abekoh/blob/main/RESUME-ja.md",
+    text: "Resume (Japanese)",
   },
 ];
 
