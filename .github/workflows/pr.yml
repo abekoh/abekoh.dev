@@ -12,3 +12,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version-file: "package.json"
+      - name: Install
+        run: npm ci
+      - name: Lint
+        run: npm lint
+      - name: Test
+        run: npm test
+
