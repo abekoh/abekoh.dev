@@ -1,10 +1,9 @@
+/** @jsx jsx */
 import { Hono } from "hono";
-import { poweredBy } from "hono/powered-by";
 import { serveStatic } from "hono/cloudflare-workers";
+import { jsx } from 'hono/jsx'
 
 const app = new Hono();
-
-app.use("*", poweredBy());
 
 const Layout = (props: { children?: string }) => {
   return (
