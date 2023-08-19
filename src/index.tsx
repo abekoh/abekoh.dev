@@ -17,19 +17,19 @@ const Layout = (props: { children?: string }) => {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/assets/favicon-32x32.png"
+          href="/icons/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="96x96"
-          href="/assets/favicon-96x96.png"
+          href="/icons/favicon-96x96.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/assets/favicon-16x16.png"
+          href="/icons/favicon-16x16.png"
         />
         <title>abekoh.dev</title>
         <link
@@ -87,7 +87,7 @@ const Top = () => {
     <Layout>
       <main>
         <h1>abekoh.dev</h1>
-        <img src="/assets/author.png" alt="author" />
+        <img src="/icons/author.png" alt="author" />
         <p>abekoh (Kotaro Abe, 阿部 耕太郎) is a software engineer.</p>
         <ul>
           {links.map((link) => (
@@ -105,15 +105,9 @@ app.get("/", (c) => {
   return c.html(<Top />);
 });
 
-app.get(
-  "/assets/*",
-  serveStatic({
-    root: "./",
-    rewriteRequestPath: (path) => path.replace(/^\/assets/, "/"),
-  }),
-);
+app.get("/icons/*", serveStatic({ root: "./" }));
 
-app.get("/favicon.ico", serveStatic({ path: "./favicon.ico" }));
+app.get("/favicon.ico", serveStatic({ path: "./icons/favicon.ico" }));
 
 app.get("/.well-known/atproto-did", (c) => {
   return c.text("did:plc:eadrwmh2en6uubkc5cmslqom");
