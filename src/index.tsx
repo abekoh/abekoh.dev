@@ -4,6 +4,8 @@ import { serveStatic } from "hono/cloudflare-workers";
 
 const app = new Hono();
 
+app.use("*", poweredBy());
+
 const Layout = (props: { children?: string }) => {
   return (
     <html lang="en">
@@ -113,8 +115,7 @@ app.get(
 app.get("/favicon.ico", serveStatic({ path: "./favicon.ico" }));
 
 app.get("/.well-known/atproto-did", (c) => {
-  return c.text(`did=did:plc:eadrwmh2en6uubkc5cmslqom
-`);
+  return c.text("did:plc:eadrwmh2en6uubkc5cmslqom");
 });
 
 export default app;
