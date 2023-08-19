@@ -36,6 +36,7 @@ const Layout = (props: { children?: string }) => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css"
         />
+        <link rel="me" href="https://mstdn.jp/@abekoh" />
       </head>
       <body>{props.children}</body>
     </html>
