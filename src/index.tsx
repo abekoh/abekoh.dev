@@ -1,14 +1,12 @@
 /** @jsx jsx */
 import { Hono } from "hono";
 import { serveStatic } from "hono/cloudflare-workers";
-import { compress } from "hono/compress";
 import { etag } from "hono/etag";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { jsx } from "hono/jsx";
 
 const app = new Hono();
 
-app.use("*", compress());
 app.use("/icons/*", etag());
 
 const Layout = (props: { children?: string }) => {
