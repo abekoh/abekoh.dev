@@ -49,12 +49,16 @@ const Layout = (props: { children?: string }) => {
 
 const links: { href: string; text: string }[] = [
   {
-    href: "https://github.com/abekoh",
-    text: "GitHub",
+    href: "https://blog.abekoh.dev/",
+    text: "abekoh's tech note (blog)",
   },
   {
-    href: "https://blog.abekoh.dev/",
-    text: "abekoh's tech note",
+    href: "https://github.com/abekoh/abekoh/blob/main/RESUME-ja.md",
+    text: "Resume (GitHub)",
+  },
+  {
+    href: "https://github.com/abekoh",
+    text: "GitHub",
   },
   {
     href: "https://twitter.com/abekoh_bcky",
@@ -83,10 +87,6 @@ const links: { href: string; text: string }[] = [
   {
     href: "https://speakerdeck.com/abekoh",
     text: "Speaker Deck",
-  },
-  {
-    href: "https://github.com/abekoh/abekoh/blob/main/RESUME-ja.md",
-    text: "Resume",
   },
 ];
 
