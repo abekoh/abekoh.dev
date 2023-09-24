@@ -27,7 +27,7 @@
     "hono": "^3.7.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230821.0",
+    "@cloudflare/workers-types": "^4.20230914.0",
     "@types/jest": "^29.5.4",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.5.0",
