@@ -122,4 +122,3 @@ app.get("/.well-known/atproto-did", (c) => {
 });
 
 export default app;
-
