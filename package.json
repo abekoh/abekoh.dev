@@ -24,7 +24,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "hono": "^3.8.1"
+    "hono": "^3.9.2"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230914.0",
