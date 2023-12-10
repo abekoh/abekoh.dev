@@ -1,13 +1,12 @@
 {
-  "extends": ["config:base"],
-  "packageRules": [
+  extends: ["config:base"],
+  packageRules: [
     {
-      "automerge": true,
-      "matchUpdateTypes": ["minor", "patch"]
-    }
+      automerge: true,
+      matchUpdateTypes: ["minor", "patch"],
+    },
   ],
-  "major": {
-    "automerge": false
-  }
+  major: {
+    automerge: false,
+  },
 }
-
