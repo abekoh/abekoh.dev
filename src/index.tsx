@@ -4,6 +4,8 @@ import { serveStatic } from "hono/cloudflare-workers";
 import { etag } from "hono/etag";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { jsx } from "hono/jsx";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import manifest from '__STATIC_CONTENT_MANIFEST'
 
 const app = new Hono();
 
@@ -113,7 +115,7 @@ app.get("/", (c) => {
   return c.html(<Top />);
 });
 
-app.get("/icons/*", serveStatic({ root: "./" }));
+app.get("/icons/*", serveStatic({ root: "./", manifest }));
 
 app.get("/favicon.ico", serveStatic({ path: "./icons/favicon.ico" }));
 
