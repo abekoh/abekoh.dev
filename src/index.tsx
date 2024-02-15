@@ -5,7 +5,7 @@ import { etag } from "hono/etag";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { jsx } from "hono/jsx";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import manifest from '__STATIC_CONTENT_MANIFEST'
+import manifest from "__STATIC_CONTENT_MANIFEST";
 
 const app = new Hono();
 
