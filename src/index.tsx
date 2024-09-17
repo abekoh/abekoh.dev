@@ -82,6 +82,10 @@ const links: { href: string; text: string }[] = [
     href: "https://speakerdeck.com/abekoh",
     text: "Speaker Deck",
   },
+  {
+    href: "https://connpass.com/user/abekoh",
+    text: "connpass",
+  },
 ];
 
 const Top = () => {
