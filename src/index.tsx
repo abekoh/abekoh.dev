@@ -55,10 +55,6 @@ const links: { href: string; text: string }[] = [
     text: "abekoh's tech note (blog)",
   },
   {
-    href: "https://github.com/abekoh/abekoh/blob/main/RESUME-ja.md",
-    text: "Resume (GitHub)",
-  },
-  {
     href: "https://github.com/abekoh",
     text: "GitHub",
   },
