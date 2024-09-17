@@ -75,10 +75,6 @@ const links: { href: string; text: string }[] = [
     text: "Mastodon",
   },
   {
-    href: "https://www.linkedin.com/in/abekoh",
-    text: "LinkedIn",
-  },
-  {
     href: "https://zenn.dev/abekoh",
     text: "Zenn",
   },
