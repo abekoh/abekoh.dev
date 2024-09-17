@@ -55,10 +55,6 @@ const links: { href: string; text: string }[] = [
     text: "abekoh's tech note (blog)",
   },
   {
-    href: "https://github.com/abekoh/abekoh/blob/main/RESUME-ja.md",
-    text: "Resume (GitHub)",
-  },
-  {
     href: "https://github.com/abekoh",
     text: "GitHub",
   },
@@ -75,10 +71,6 @@ const links: { href: string; text: string }[] = [
     text: "Mastodon",
   },
   {
-    href: "https://www.linkedin.com/in/abekoh",
-    text: "LinkedIn",
-  },
-  {
     href: "https://zenn.dev/abekoh",
     text: "Zenn",
   },
@@ -89,6 +81,10 @@ const links: { href: string; text: string }[] = [
   {
     href: "https://speakerdeck.com/abekoh",
     text: "Speaker Deck",
+  },
+  {
+    href: "https://connpass.com/user/abekoh",
+    text: "connpass",
   },
 ];
 
