@@ -18,24 +18,7 @@ const Layout = (props: { children?: string }) => {
         <meta charset="utf-8" />
         <meta name="author" content="abekoh" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/icons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/icons/favicon-96x96.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/icons/favicon-16x16.png"
-        />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48" />
         <title>abekoh.dev</title>
         <link
           rel="stylesheet"
